@@ -5,82 +5,7 @@
     <title>健身資訊網站</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      body {
-        background-color:antiquewhite;
-        color:brown;
-        font-family:'標楷體';
-      }
-      .title {
-        color: white ;
-        background-color:blue ;
-        /* 1rem->16px */
-        font-size: 3rem ;
-        border-radius: 8px ;
-        height: 64px ;
-        line-height: 64px;
-        margin: 8px 0px;
-        padding: 12px 0px;
-        text-align: center;
-      }
-      .subtitle {
-        color: white ;
-        background-color:blue ;
-        font-size: 2rem ;
-        border-radius: 8px ;
-        height: 48px ;
-        line-height: 48px;
-        margin: 8px 0px;
-        padding-left: 8px;
-        text-align: left;
-      }
-      #container {
-        margin: 0px auto;
-        width: 90%;
-        text-align: center;
-      }
-      mark {
-        background-color:chartreuse;
-      }
-      .text-1 {
-        border: 2px black dotted;
-        margin-bottom: 12px;
-        background-color:coral;
-        padding: 6px;
-      }
-      .text-2 {
-        font-size: 2rem;
-        background-color:rgb(255, 255, 0);
-      }
-      .text-3 {
-        text-align: left;
-        list-style-type: circle;
-      }
-      .good-link ul {
-        text-align: left;
-      }
-      .good-link a {
-        text-decoration: none;
-      }
-      .good-link a:link {
-        color: green;
-      }
-      .good-link a:hover {
-        color:palevioletred;
-      }
-      #image {
-        background-color:burlywood;
-        padding: 6px;
-        text-align: center;
-      }
-      #image img {
-        margin-top: 3px;
-        width: 30% ;
-        background-color:white;
-        padding: 4px;
-        border-radius: 3px;
-      }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <div id="container">
@@ -169,15 +94,17 @@
             </tr>
         </tbody>
     </table>
-    <p>
+    <p class="table-info">
         <b>計算BMI:</b>
         一位民眾身高160公分，體重65公斤，BMI25.4kg/m2(=65÷1.6÷1.6)，體重屬於「過重」。<br>
         <b>計算所需熱量:</b>
         因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
     </p>
     <div class="subtitle">健身影片</div>
-    <iframe width="46%" height="480" src="https://www.youtube.com/embed/20uf1EcGqjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="46%" height="480" src="https://www.youtube.com/embed/qGf1-usZ0Fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div>
+      <iframe width="46%" height="480" src="https://www.youtube.com/embed/20uf1EcGqjY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="46%" height="480" src="https://www.youtube.com/embed/qGf1-usZ0Fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
     <hr>
     <a href="bmi.html">BMI計算機</a>
     <hr>
@@ -185,9 +112,12 @@
     <form action="" method="get">
         <label for="email">Email</label>
         <input type="email" name="wmail" id="email" placeholder="請輸入Email"><br>
+        <label for="phone">Phone</label>
+        <input type="number" name="phone" id="phone" placeholder="請輸入電話"><br>
         <label for="suggest">意見回饋</label><br>
         <textarea name="suggest" id="suggest" cols="30" rows="10" placeholder="請輸入您的意見"></textarea><br>
-        <button type="submit">確定</button>
+        <button type="submit" class="myButton">確定</button>
+        <input type="reset" class="myButton">
     </form>
     <p>
         2022 &copy; Peter Chiou

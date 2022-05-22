@@ -1,0 +1,125 @@
+body {
+    background-color:antiquewhite;
+    color:brown;
+    font-family:'標楷體';
+  }
+  .title {
+    color: white ;
+    background-color:blue ;
+    /* 1rem->16px */
+    font-size: 3rem ;
+    border-radius: 8px ;
+    height: 64px ;
+    line-height: 64px;
+    margin: 8px 0px;
+    padding: 12px 0px;
+    text-align: center;
+  }
+  .subtitle {
+    display: inline-block;
+    color: white ;
+    background-color:blue ;
+    font-size: 2rem ;
+    border-radius: 3px ;
+    height: 48px ;
+    line-height: 48px;
+    margin: 8px 0px;
+    padding-left: 8px;
+    text-align: left;
+  }
+  #container {
+    margin: 0px auto;
+    width: 90%;
+    text-align: center;
+  }
+  mark {
+    background-color:chartreuse;
+  }
+  .text-1 {
+    border: 2px black dotted;
+    margin-bottom: 12px;
+    background-color:coral;
+    padding: 6px;
+  }
+  .text-2 {
+    font-size: 2rem;
+    background-color:rgb(255, 255, 0);
+  }
+  .text-3 {
+    text-align: left;
+    list-style-type: circle;
+  }
+  .good-link ul {
+    text-align: left;
+  }
+  .good-link a {
+    text-decoration: none;
+  }
+  .good-link a:link {
+    color: green;
+  }
+  .good-link a:hover {
+    color:palevioletred;
+  }
+  #image {
+    background-color:burlywood;
+    padding: 6px;
+    text-align: center;
+  }
+  #image img {
+    margin-top: 3px;
+    width: 30% ;
+    background-color:white;
+    padding: 4px;
+    border-radius: 3px;
+  }
+  table {
+    width: 90%;
+    margin: 0 auto;
+    height: 250px;
+    margin-top: 12px;
+  }
+  th {
+    background-color:coral ;
+    color:black;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  tr {
+    background-color:aqua;
+  }
+  td {
+    color: black;
+  }
+  td:first-child {
+    background-color:chartreuse;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .table-info {
+    text-align: left;
+  }
+  form {
+    background-color:tomato;
+    padding: 24px 0px;
+    border-radius: 6px;
+    color:white;
+  }
+  label,input,textarea,button {
+    font-size: 20px;
+  }
+  textarea {
+      margin: 12px 0;
+  }
+  input {
+    margin-left: 12px;
+  }
+  input[type="number"]{
+    margin-top: 6px;
+  }
+  .myButton {
+    width: 100px;
+    height: 40px;
+    background-color: chartreuse;
+    border-radius: 3px;
+  }

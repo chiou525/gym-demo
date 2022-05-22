@@ -5,18 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI計算機</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        form {
+            height: 250px;
+            width: 40%;
+            margin: 0 auto;
+        }
+        input {
+            width: 60%;
+        }
+        .myButton {
+            margin-top: 80px;
+        }
+        @media screen and (max-weidth:1024px){
+            form {
+                width: 80%;
+            }
+        }
+        @media screen and (max-weidth:768px){
+            form {
+                width: 100%;
+            }
+            input {
+                width: 70%;
+            }
+        }
+    </style>
 </head>
 <body>
-<h2>BMI計算機</h2>
-<form action="" method="get">
-    <label for="name">姓名</label>
-    <input type="text" name="name" id="name" required><br>
-    <label for="height">身高</label>
-    <input type="number" name="height" step="0.1" id="height" required><br>
-    <label for="weight">体重</label>
-    <input type="number" name="weight" step="0.1" id="weight" required><br>
-    <button type="submit">計算</button>
-</form>
-<a href="index.html">返回首頁</a>
+<div id="container">
+    <div class="title">BMI計算機</div>
+    <form action="" method="get">
+        <label for="name">姓名</label>
+        <input type="text" name="name" id="name" required><br>
+        <label for="height">身高</label>
+        <input type="number" name="height" step="0.1" id="height" required><br>
+        <label for="weight">体重</label>
+        <input type="number" name="weight" step="0.1" id="weight" required><br>
+        <p><button type="submit">計算</button></p>
+    </form>
+    <a href="index.html">返回首頁</a>
+</div>
 </body>
 </html>
